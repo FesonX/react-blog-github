@@ -19,14 +19,15 @@ a,
 }
 
 h1 {
-  font-family: "Shadows Into Light", serif;
+  /* font-family: "Open Sans", serif; */
   font-size: 48px;
   text-align: left;
   margin-bottom: 8px;
+  color: rgb(109 168 220);;
 }
 
 h2 {
-  font-family: "Shadows Into Light", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 30px;
   font-weight: 700;
   padding: 0;
