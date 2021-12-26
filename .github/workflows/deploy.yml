@@ -18,6 +18,13 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          REACT_APP_TOKEN: ${{ secrets.BLOG_APP_TOKEN }}
+          REACT_APP_OAUTH_CID: ${{ secrets.BLOG_OAUTH_CID }}
+          REACT_APP_OAUTH_SECRET: ${{ secrets.BLOG_OAUTH_SECRET }}
+          REACT_APP_BLOG_REPO: ${{ secrets.BLOG_REPO }}
+          REACT_APP_BLOG_TITLE: ${{ secrets.BLOG_TITLE }}
+          REACT_APP_BLOG_USER: ${{ secrets.BLOG_USER }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
