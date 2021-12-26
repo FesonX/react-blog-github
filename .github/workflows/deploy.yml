@@ -26,8 +26,8 @@ jobs:
           REACT_APP_BLOG_TITLE: ${{ secrets.BLOG_TITLE }}
           REACT_APP_BLOG_USER: ${{ secrets.BLOG_USER }}
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.1.5
+        uses: amesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.BLOG_SECRET_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.BLOG_SECRET_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
