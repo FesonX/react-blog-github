@@ -5,6 +5,11 @@ on:
   push:
     branches:
       - master
+  workflow_call:
+    secrets:
+      BLOG_APP_TOKEN:
+        required: true
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
